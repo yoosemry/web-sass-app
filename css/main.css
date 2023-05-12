@@ -1,3 +1,7 @@
+
+:root{
+    --bg-color : #fff;
+}
 *,
 *::before,
 *::after{
@@ -18,5 +22,5 @@ html{
 body{
 
     font-size: 1.6rem;
-    background-color: antiquewhite;
+    background-color: var(--bg-color);
 }

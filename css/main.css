@@ -48,6 +48,7 @@ header.header{
 .logo-part{
     display: flex;
     align-items: center;
+    z-index: 88;
 }
 
 .logo-part a img{
@@ -101,7 +102,32 @@ header.header{
 .header .header-social{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
+}
+.header .header-social .box-icon{
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #fff;
+    border-radius: 1rem;
+
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 53.2rem){
+    .header .links,
+    .header-social .box-icon:not(:last-child)
+    {
+        display: none;
+    }
+
+    .header-social .box-icon:nth-child(4){
+        background-color: transparent;
+    }
+    
 }
 
 

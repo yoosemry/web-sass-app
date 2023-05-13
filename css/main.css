@@ -3,7 +3,7 @@
 :root {
     --bg-color: #fff;
     --color-light : #EFEFEF;
-    --text-color: rgb(35, 35, 35);
+    --text-color: #232323;
 
     --font-primary : 'DM Sans', sans-serif;
 }
@@ -19,7 +19,7 @@
     scroll-behavior: smooth;
  
     font-weight: 400;
-    color: var(--text-color);
+   
     transition: .2s ease-in;
 }
 
@@ -34,6 +34,41 @@ body {
     font-family: var(--font-primary);
 }
 
+/*-------------------------------- headings buttons style */
+h1.heading-1{
+    font-size: 6.1rem;
+    line-height: 6.7rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+h3.heading-3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #bbbbbb;
+}
+
+.btn{
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 2rem 6rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #232323;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.btn.btn-huge{
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
 header.header{
     position: sticky;
     top: 0;
@@ -45,6 +80,7 @@ header.header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: var(--text-color);
     z-index: 20;
 }
 
@@ -52,6 +88,7 @@ header.header{
     display: flex;
     align-items: center;
     z-index: 88;
+    color: currentColor;
 }
 
 .logo-part a img{
@@ -83,6 +120,7 @@ header.header{
     align-items: center;
     background-color: transparent;
     align-self: stretch;
+    
 }
 
 .header .links a{
@@ -95,6 +133,7 @@ header.header{
     background-color: transparent;
     padding: 1.5rem;
     align-self: stretch;
+    color: currentColor;
 }
 
 .header .links a:hover{
@@ -120,6 +159,9 @@ header.header{
     cursor: pointer;
 }
 
+.header .header-social  .box-icon.main-menu{
+    display: none;
+}
 .menu{
     height: 2px;
     width: 2.5rem;
@@ -138,14 +180,39 @@ content: '';
 display: block;
 }
 
+/*------------------------------------------- web saas style */
+.saas-app{
+    background-color: var(--text-color);
+    color: #fff;
+
+}
+
+.container{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.container-padding{
+    padding: 15rem 5%;
+}
 
 
+.saas-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.saas-app-sub > *{
+    margin-top: 2rem;
+}
 
 /*------------------------------------------- query media */
 
 
 @media screen and (max-width: 53.2rem){
+
+    .header .header-social  .box-icon.main-menu{display: flex;align-items: center;justify-content: center;}
     .header .links,
     .header-social .box-icon:not(:last-child)
     {
@@ -160,8 +227,8 @@ display: block;
         position: absolute;
         top: 9rem;
         display: none;
-        flex-direction: column;
-        
+        background-color: var(--color-light);
+        margin-left: -1.5rem;
     }
 
     .header .links a{
@@ -174,20 +241,35 @@ display: block;
         text-transform: capitalize;
         background-color: transparent;
         margin: 1rem -2rem;
-        width: 100vw;
         padding: 1rem;
         align-self: stretch;
     }
 
+   
+
     .header .show{
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         transition: .2s ease-in;
+        width: 100vw;
     }
 
     
     .header .links a:hover{
         background-color: var(--color-light);
     }
+
+    .saas-wrap{
+        flex-direction: column;
+    }
+
+    .btn.btn-huge{
+        margin-top: 5rem;
+    }
+
+  
     
 }
 

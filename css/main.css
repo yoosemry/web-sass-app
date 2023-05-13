@@ -17,7 +17,7 @@
     outline: none;
     text-decoration: none;
     scroll-behavior: smooth;
- 
+    
     font-weight: 400;
    
     transition: .2s ease-in;
@@ -32,6 +32,7 @@ body {
     font-size: 1.6rem;
     background-color: var(--bg-color);
     font-family: var(--font-primary);
+    overflow-x: hidden;
 }
 
 /*-------------------------------- headings buttons style */
@@ -304,8 +305,7 @@ p.text{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
     grid-column-gap: 3rem;
-   
-    
+
 }
 
 .feuture-box{
@@ -317,8 +317,8 @@ p.text{
     grid-row-gap: 5rem;    
     position: relative;
     overflow: hidden;
-   
 }
+
 
 .feuture-box::before{
     content: '';
@@ -333,6 +333,76 @@ p.text{
     transform: rotate(45deg);
    
 }
+
+.feuture-box:nth-child(1),
+.feuture-box:nth-child(3){
+    background-color: var(--color-light);
+}
+
+.feuture-box:nth-child(1):hover,
+.feuture-box:nth-child(3):hover{
+    background-color: var(--text-color);
+}
+
+.feuture-box:nth-child(1):hover > *,
+.feuture-box:nth-child(3):hover > *
+{
+    color: #fff !important;
+}
+
+.feuture-box:nth-child(1):hover::before,
+.feuture-box:nth-child(3):hover::before{
+    opacity: 1;
+}
+
+.feuture-box:nth-child(1):hover > .sub-feuture .plus,
+.feuture-box:nth-child(3):hover > .sub-feuture .plus{
+    border: 2px solid #fff;
+}
+
+
+.feuture-box:nth-child(1):hover > .sub-feuture p,
+.feuture-box:nth-child(3):hover > .sub-feuture p{
+    display: block;
+    
+}
+
+
+
+
+.feuture-box:nth-child(1) h4.heading-4,
+.feuture-box:nth-child(3) h4.heading-4{
+    color: var(--text-color);
+}
+
+
+.feuture-box:nth-child(1) p.text,
+.feuture-box:nth-child(3) p.text{
+    color: #777;
+}
+
+
+.feuture-box:nth-child(1) span,
+.feuture-box:nth-child(1) .sub-feuture .plus,
+.feuture-box:nth-child(3) .sub-feuture .plus,
+.feuture-box:nth-child(3) span{
+    color: #ff8484;
+    border: none;
+}
+
+.feuture-box:nth-child(1) .sub-feuture p,
+.feuture-box:nth-child(3) .sub-feuture p{
+    display: none;
+ 
+}
+
+
+
+.feuture-box:nth-child(1)::before,
+.feuture-box:nth-child(3)::before{
+ opacity: .3;
+}
+
 
 .feuture-box span{
     font-size: 5.5rem;
@@ -352,13 +422,13 @@ p.text{
 }
 
 .feuture-box .sub-feuture .plus{
-    
-    width: 3.5rem;
-    height: 3.5rem;
+    font-size: 2.5rem;
+    width: 5.5rem;
+    height: 5.5rem;
     border-radius: 50%;
     padding: 2rem;
     align-items: center;
-    border: 2px solid red;
+    border: 2px solid #fff;
 
     display: grid;
     align-content: center;
@@ -444,6 +514,22 @@ p.text{
     .development-right-side h1.heading-1{
     text-align: center;
 }
+
+h1.heading-1{
+    font-size: 4.1rem;
+    line-height: 4.7rem;
+    font-weight: 600;
+ 
+}
+
+.feuture-boxs{
+    display: grid;
+    grid-template-columns: ifr;
+    grid-column-gap: 3rem;
+}
+
+.feuture-boxs .feuture-box{
+    margin-top: 3rem;
 }
 
 

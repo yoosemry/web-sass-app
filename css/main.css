@@ -437,6 +437,70 @@ p.text{
 }
 
 
+/*-------------------------------------- news-latters style */
+.news-latter{
+    background-color: var(--text-color);
+    width: 100%;
+    border-radius: 1rem;
+    padding: 5%;
+    color: #fff;
+    font-family: var(--font-primary);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-latter h4{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff8484;
+}
+.news-latter h2{
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.news-latter-form{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+
+.news-latter-form .input{
+    border: 0;
+    width: 30rem;
+    background-color: #565656;
+    padding: 2rem 3rem;    
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #232323;
+
+}
+
+.news-latter-form .submit{
+    border: 0;
+    background-color: #ff8484;
+    color: #fff;
+    padding: 2rem 3rem;
+    margin-left: 1rem;
+    border-radius: .5rem;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.news-latter-form .submit:hover{
+    background-color: #ff2d2d
+}
+
+
 
 /*------------------------------------------- query media */
 
@@ -531,6 +595,30 @@ h1.heading-1{
 
 .feuture-boxs .feuture-box{
     margin-top: 3rem;
+}
+
+.news-latter{
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.news-latter h2{
+    font-size: 3.5rem;
+}
+
+.news-latter-form{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.news-latter-form .input{
+    width: 90%;
+    margin: 2rem auto;
+}
+.news-latter-form .submit{
+    width: 90%;
+    margin: 0rem auto;
 }
 
 }

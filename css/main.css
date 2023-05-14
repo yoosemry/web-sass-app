@@ -507,6 +507,9 @@ p.text{
 
 @media screen and (max-width: 53.2rem){
 
+    .container-padding{
+        padding: 7.5rem 5%;
+    }
     .header .header-social  .box-icon.main-menu{display: flex;align-items: center;justify-content: center;}
     .header .links,
     .header-social .box-icon:not(:last-child)

@@ -43,6 +43,13 @@ h1.heading-1{
     text-transform: capitalize;
     color: #fff;
 }
+h2.heading-2{
+    font-size: 3.7rem;
+    line-height: 4.1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
 h3.heading-3{
     font-size: 1.8rem;
     font-weight: 700;
@@ -103,7 +110,16 @@ h3.heading-3{
 }
 
 
+.white{
+    color: #fff !important;
+}
+.black{
+    color: var(--text-color) !important;
+}
 
+
+
+/*--------------------------------- header style */
 
 
 header.header{
@@ -500,7 +516,181 @@ p.text{
     background-color: #ff2d2d
 }
 
+/*----------------------------------- care style  */
+.care{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10rem;
+    grid-template-rows: min-content;
+}
 
+.care img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.care span{
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #777;
+}
+
+.care .care-content{
+    display: grid;
+    grid-row-gap: 2rem;
+    color: var(--text-color);
+}
+.care .care-content h1{
+    color: currentColor;
+    margin-top: -6rem;
+}
+
+.care .care-content .sub-care{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.care .care-content .sub-care .icon-box{
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--color-light);
+    border-radius: 50%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.care .care-content .sub-care .icon-box i.fa-regular{
+    font-size: 3rem;
+    color: green;
+}
+
+.care .care-content .sub-care .icon-box i.fa-solid {
+    color: red;
+    font-size: 3rem;
+}
+
+.sub-care .percentage{
+     margin-right: 4rem;
+}
+
+.care .sub-care .percentage span{
+    font-size: 3.7rem;
+    font-weight: 700;
+    line-height: 4.1rem;
+    color: currentColor;
+}
+
+
+/*------------------------ personal style  */
+
+.personal-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: var(--font-primary);
+
+}
+
+.personal-info img{
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: 1rem;
+}
+
+.personal-info .personal-content {
+    padding: 10%;
+    background-color: #DCE8EB;
+    margin: 10% 0;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.personal-info .personal-content h2{
+    margin-bottom: 2rem;
+    align-items: start;
+}
+.personal-info .personal-content p.text{
+    margin-top: 3rem;
+}
+
+
+.social-media{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.development .personal-box{
+    background-color: #DCE8EB;
+    margin-top: 6rem;
+    border-radius: 1rem;
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.development .personal-box p:nth-child(2){
+    font-size: 2.2rem;
+    line-height: 2.9rem;
+    color: #232323;
+    font-weight: 700;
+    margin-top: 2rem;
+    font-family: var(--font-primary);
+    text-align: center;
+}
+
+
+.social-media .brand-box{
+    margin-top: 3rem;
+    background-color: #fff;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    font-size: 3rem;
+    cursor: pointer;
+
+}
+
+.social-media .brand-box:hover{
+    background-color: #ff8484;
+    color: #fff;
+}
+
+
+
+/*----------------------------------- gallery style  */
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22.3rem,1fr));
+    grid-column-gap: 5rem;
+ align-items: center;
+ justify-items: center;
+}
+
+.gallery img{
+    width: 100%;
+   
+    height: 40rem;
+    object-fit: cover;
+
+}
+
+
+
+.gallery img.img-pigger{
+   height: 45rem;
+    object-fit: cover; 
+}
 
 /*------------------------------------------- query media */
 
@@ -623,6 +813,85 @@ h1.heading-1{
     width: 90%;
     margin: 0rem auto;
 }
+
+    .gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gallery img{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.gallery img.img-pigger{
+    height: 40rem;
+    width: 100%;  
+}
+
+.care{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.care img{
+    margin-bottom: 5rem;
+}
+
+
+.care .care-content > *{
+    margin-top: 2rem;
+    
+}
+
+.care .care-content h1{
+    margin: 0;
+}
+
+
+
+.care .care-content .sub-care{
+    
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.care .care-content .sub-care > *{
+    margin-top: 2rem;
+}
+
+.sub-care .percentage{
+    margin-right:0;
+    text-align: center;
+
+}
+
+
+.personal-info{
+     grid-template-columns: 1fr;
+   
+
+}
+
+ .personal-info img{
+   border-radius: 1rem 1rem 0 0;
+}
+
+
+.personal-info .personal-content {
+    padding: 10%;
+    background-color: #DCE8EB;
+    margin: 0;
+    border-radius: 0 1rem 1rem 0;
+} 
+.social-media{
+   
+    justify-content: center;
+    gap: 1rem;
+}
+
+
 
 }
 

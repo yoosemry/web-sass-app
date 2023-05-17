@@ -1,5 +1,5 @@
 
-let closeIcon = 'fa-solid fa-xmark';
+
 
 const menu = document.querySelector('.main-menu');
 
